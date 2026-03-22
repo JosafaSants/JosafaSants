@@ -1,75 +1,160 @@
-<h1 align="center">Hi, I'm Josafa 👋</h1>
+<div align="center">
 
-<p align="center">
-  <b>Control & Automation Engineer · Data Scientist · Data Analyst · Data Engineer</b><br/>
-  <i>Turning raw data into actionable insights — from aviation OTA metrics to AI-powered pipelines</i>
-</p>
+```
+╔══════════════════════════════════════════════════════╗
+║          J O S A F A   B A R B O S A                 ║
+║    Control & Automation Engineer  ·  Data Engineer   ║
+╚══════════════════════════════════════════════════════╝
+```
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=JosafaSants&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
-  <a href="https://www.linkedin.com/in/josafa-barbosa-dos-santos/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin" /></a>
-  <a href="mailto:josafabarbosa.santos@hotmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white" /></a>
-</p>
+[![Profile Views](https://komarev.com/ghpvc/?username=JosafaSants&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/JosafaSants)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-josafa--barbosa--dos--santos-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/josafa-barbosa-dos-santos/)
+[![Email](https://img.shields.io/badge/Email-josafabarbosa.santos%40hotmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:josafabarbosa.santos@hotmail.com)
 
----
+*Engenheiro de automação que migrou para dados — e nunca mais olhou para trás.*
+*Automation engineer who moved into data — and never looked back.*
 
-## 👨‍💻 About Me
-
-I'm a **Control and Automation Engineer** (PUC Minas) with deep experience in Data Science, Analytics, and Engineering. I work at the intersection of **engineering precision and data-driven decision-making** — building everything from automated ETL pipelines and travel industry dashboards to AI-powered content systems.
-
-- 🌍 Based in **Brazil**
-- 🔭 Currently working with **aviation & OTA (Online Travel Agency) data** — sales metrics, pricing intelligence, and market analytics
-- 🧠 Currently learning **RAG (Retrieval-Augmented Generation)** and applied LLM architectures
-- 🤝 Open to collaborations in **Data Engineering, ML pipelines, and AI-powered applications**
-- ✉️ Reach me at [josafabarbosa.santos@hotmail.com](mailto:josafabarbosa.santos@hotmail.com)
+</div>
 
 ---
 
-## 🚀 Featured Projects
+## 👨‍💻 Sobre mim / About Me
+
+🇧🇷 Formado em **Engenharia de Controle e Automação** pela PUC Minas, hoje trabalho na interseção entre **Engenharia de Dados, Analytics e IA aplicada** — construindo desde pipelines de ETL até sistemas de análise financeira em escala para o setor de viagens. Trabalho diariamente com dados da indústria de **aviação e OTA (Online Travel Agency)**, navegando entre múltiplas fontes heterogêneas e orquestrando camadas de um Data Lake — do dado bruto até o insight pronto para consumo.
+
+🇺🇸 Control & Automation Engineer (PUC Minas) working at the intersection of **Data Engineering, Analytics, and Applied AI** — building everything from ETL pipelines to large-scale financial analytics for the travel industry. I work daily with **aviation and OTA (Online Travel Agency)** data, navigating heterogeneous multi-source environments and orchestrating Data Lake layers from raw ingestion to analytics-ready delivery.
+
+```
+🔭  Current focus  →  Aviation & OTA data analytics — financial, payments & reconciliation
+🧠  Learning       →  RAG (Retrieval-Augmented Generation) and applied LLM architectures
+⚡  Principle      →  Data without context is noise. Context without data is opinion.
+📍  Location       →  Brazil
+```
+
+---
+
+## 🚀 Projetos em Destaque
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### ✈️ OTA Aviation Sales Report
-> Unified multi-source flight sales analytics from **123Milhas** and **MaxMilhas** into a structured, styled Excel report — enabling cross-platform comparison of pricing, volume, and market trends.
-> `Python` · `Pandas` · `Excel/openpyxl` · `ETL`
+Pipeline de consolidação de dados de vendas de voos das plataformas **123Milhas** e **MaxMilhas** em um único relatório Excel estilizado — permitindo comparação cruzada de precificação, volume e tendências de mercado.
+
+**O que foi construído:**
+- Extração de dados de múltiplas fontes heterogêneas
+- Normalização e cruzamento de schemas diferentes
+- Relatório Excel com formatação condicional e visual profissional
+
+`Python` · `Pandas` · `openpyxl` · `ETL` · `AWS Athena`
+
+</td>
+<td width="50%" valign="top">
+
+### 📘 Leif, o Viking dos Mares
+Pipeline completo de produção de eBook — da geração do conteúdo narrativo (13 capítulos) até os assets de marketing e entrega do `.docx` formatado.
+
+**O que foi construído:**
+- Geração assistida por IA para narrativa de aventura em português
+- Automação de formatação e estrutura de capítulos
+- Assets de marketing integrados ao pipeline
+
+`Content Automation` · `Python` · `python-docx` · `AI-Assisted Writing`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🗄️ SQL Knowledge Base — Travel Data Engineering
+Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos os sistemas de dados do ecossistema de travel OTA: queries prontas, dicionários de status, mapeamentos de schemas, padrões de performance e arquitetura do Data Lake (Bronze → Silver → Gold).
+
+**25 domínios cobertos:** Financeiro, Pagamentos, Conciliação Cielo, Vouchers, Ônibus, NFSe, Netsuite, DeltaLake MaxMilhas, e mais.
+
+`AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake` · `Data Lake`
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 RAG Pipeline (em desenvolvimento)
+Aplicação de **Retrieval-Augmented Generation** para consulta inteligente sobre bases de conhecimento técnico — conectando LLMs com contexto específico de domínio para respostas precisas sobre sistemas de dados.
+
+`Python` · `LangChain / LlamaIndex` · `Vector DB` · `LLM`
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 📘 Leif, o Viking dos Mares — eBook
-> Full production pipeline for a 13-chapter Viking adventure story in Portuguese — from narrative content generation to marketing assets and formatted `.docx` deliverable.
-> `Content Automation` · `Python` · `python-docx` · `AI-Assisted Writing`
+## 🏗️ Arquitetura que trabalho no dia a dia / Daily Architecture
+
+> 🇧🇷 Trabalho com uma arquitetura Medallion sobre AWS Athena, integrando múltiplas fontes transacionais heterogêneas num Data Lake centralizado — do dado bruto até o insight analítico pronto para consumo.
+>
+> 🇺🇸 I work with a Medallion architecture on AWS Athena, integrating multiple heterogeneous transactional sources into a centralized Data Lake — from raw ingestion all the way to analytics-ready consumption.
+
+```
+  TRANSACTIONAL SOURCES          DATA LAKE (AWS Athena)         CONSUMPTION
+  ─────────────────────    ──────────────────────────────    ─────────────────
+                           │                              │
+  ┌──────────────────┐     │  ┌────────┐  ┌──────────┐  │   Dashboards
+  │  Relational DBs  │────▶│  │ BRONZE │─▶│  SILVER  │  │   Ad-hoc queries
+  │  MySQL / MSSQL   │     │  │  raw + │  │normalized│  │   Financial reports
+  └──────────────────┘     │  │  PII   │  │& joined  │  │   Reconciliation
+                           │  └────────┘  └────┬─────┘  │
+  ┌──────────────────┐     │                   │         │
+  │   Delta Lake     │────▶│               ┌───▼──────┐  │
+  │  (event-driven)  │     │               │   GOLD   │  │
+  └──────────────────┘     │               │aggregated│  │
+                           │               │& curated │  │
+  ┌──────────────────┐     │               └──────────┘  │
+  │  Legacy systems  │────▶│                              │
+  │  + ERP adapters  │     └──────────────────────────────┘
+  └──────────────────┘
+```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Técnica
 
-### Languages
+### Linguagens
 <p>
-<a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" title="Python"/></a>
-<a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" title="C"/></a>
-<a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="36" height="36" alt="C++" title="C++"/></a>
-<a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" title="C#"/></a>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" title="Python"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" title="C"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="36" height="36" alt="C++" title="C++"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" title="C#"/>
 </p>
 
-### Data & Databases
+### Dados & Bancos
 <p>
-<a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" title="MySQL"/></a>
-<a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" title="PostgreSQL"/></a>
-<a href="https://www.oracle.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" title="Oracle"/></a>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" title="MySQL"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" title="PostgreSQL"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" title="Oracle"/>
 </p>
 
-### Cloud & Infrastructure
+**SQL avançado em:** `AWS Athena (Presto/Trino)` · `MySQL` · `SQL Server` · `Delta Lake`
+
+**Ferramentas de dados:** `Pandas` · `openpyxl` · `python-docx` · `ETL pipelines`
+
+### Cloud & Infraestrutura
 <p>
-<a href="https://aws.amazon.com"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg" width="36" height="36" alt="AWS" title="AWS"/></a>
-<a href="https://portal.azure.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/azure-colored.svg" width="36" height="36" alt="Microsoft Azure" title="Microsoft Azure"/></a>
-<a href="https://www.linux.org"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" width="36" height="36" alt="Linux" title="Linux"/></a>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg" width="36" height="36" alt="AWS" title="AWS"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/azure-colored.svg" width="36" height="36" alt="Azure" title="Azure"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" width="36" height="36" alt="Linux" title="Linux"/>
 </p>
 
-### AI / ML & Tools
+**AWS:** `Athena` · `S3 (Data Lake)` · `Glue`
+
+### IA / ML & Ferramentas
 <p>
-<a href="https://www.tensorflow.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg" width="36" height="36" alt="TensorFlow" title="TensorFlow"/></a>
-<a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS Code" title="VS Code"/></a>
-<a href="https://www.figma.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" title="Figma"/></a>
-<a href="https://store.arduino.cc/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg" width="36" height="36" alt="Arduino" title="Arduino"/></a>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg" width="36" height="36" alt="TensorFlow" title="TensorFlow"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS Code" title="VS Code"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" title="Figma"/>
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg" width="36" height="36" alt="Arduino" title="Arduino"/>
 </p>
+
+**Em aprendizado ativo:** `RAG` · `LangChain` · `Vector Databases` · `LLM fine-tuning`
 
 ---
 
@@ -86,7 +171,7 @@ I'm a **Control and Automation Engineer** (PUC Minas) with deep experience in Da
 
 ---
 
-## 🌐 Socials
+## 🌐 Redes
 
 <p align="left">
 <a href="https://www.github.com/JosafaSants" target="_blank" rel="noreferrer">
@@ -96,6 +181,7 @@ I'm a **Control and Automation Engineer** (PUC Minas) with deep experience in Da
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="GitHub" title="GitHub" />
   </picture>
 </a>
+&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/josafa-barbosa-dos-santos/" target="_blank" rel="noreferrer">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" />
@@ -107,4 +193,9 @@ I'm a **Control and Automation Engineer** (PUC Minas) with deep experience in Da
 
 ---
 
-<p align="center"><i>"Engineering the data pipeline from raw signal to real decision."</i></p>
+<div align="center">
+
+*"Engenharia de dados é sobre transformar caos em estrutura — um pipeline de cada vez."*
+*"Data engineering is about turning chaos into structure — one pipeline at a time."*
+
+</div>
