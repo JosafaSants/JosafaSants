@@ -40,7 +40,7 @@
 <td width="50%" valign="top">
 
 ### ✈️ OTA Aviation Sales Report
-Pipeline de consolidação de dados de vendas de voos das plataformas **123Milhas** e **MaxMilhas** em um único relatório Excel estilizado — permitindo comparação cruzada de precificação, volume e tendências de mercado.
+Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas em um único relatório Excel estilizado — permitindo comparação cruzada de precificação, volume e tendências de mercado.
 
 **O que foi construído:**
 - Extração de dados de múltiplas fontes heterogêneas
@@ -52,29 +52,16 @@ Pipeline de consolidação de dados de vendas de voos das plataformas **123Milha
 </td>
 <td width="50%" valign="top">
 
-### 📘 Leif, o Viking dos Mares
-Pipeline completo de produção de eBook — da geração do conteúdo narrativo (13 capítulos) até os assets de marketing e entrega do `.docx` formatado.
+### 🗄️ SQL Knowledge Base — Travel Data Engineering
+Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos os sistemas de dados do ecossistema de travel OTA: queries prontas, dicionários de status, mapeamentos de schemas, padrões de performance e arquitetura do Data Lake (Bronze → Silver → Gold).
 
-**O que foi construído:**
-- Geração assistida por IA para narrativa de aventura em português
-- Automação de formatação e estrutura de capítulos
-- Assets de marketing integrados ao pipeline
+**25 domínios cobertos:** Financeiro, Pagamentos, Conciliação, Vouchers, NFSe, Netsuite, Delta Lake, e mais.
 
-`Content Automation` · `Python` · `python-docx` · `AI-Assisted Writing`
+`AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake`
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🗄️ SQL Knowledge Base — Travel Data Engineering
-Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos os sistemas de dados do ecossistema de travel OTA: queries prontas, dicionários de status, mapeamentos de schemas, padrões de performance e arquitetura do Data Lake (Bronze → Silver → Gold).
-
-**25 domínios cobertos:** Financeiro, Pagamentos, Conciliação Cielo, Vouchers, Ônibus, NFSe, Netsuite, DeltaLake MaxMilhas, e mais.
-
-`AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake` · `Data Lake`
-
-</td>
 <td width="50%" valign="top">
 
 ### 🤖 RAG Pipeline (em desenvolvimento)
@@ -82,6 +69,8 @@ Aplicação de **Retrieval-Augmented Generation** para consulta inteligente sobr
 
 `Python` · `LangChain / LlamaIndex` · `Vector DB` · `LLM`
 
+</td>
+<td width="50%" valign="top">
 </td>
 </tr>
 </table>
