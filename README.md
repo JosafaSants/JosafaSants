@@ -53,6 +53,22 @@ Servidor MCP (Model Context Protocol) em Python rodando em VPS, que expõe dados
 </td>
 <td width="50%" valign="top">
 
+### 🧠 IntelliDoc RAG Multimodal
+Sistema completo de *Retrieval-Augmented Generation* que ingere PDFs e imagens, transforma em embeddings semânticos e responde perguntas em linguagem natural — com avaliação automática de fidelidade via RAGAS (score médio 0.81).
+
+**O que foi construído:**
+- Pipeline RAG end-to-end com LangChain + Pinecone + GPT-4o-mini
+- OCR de imagens com Tesseract 5.5 integrado ao mesmo pipeline
+- Ingestão incremental por hash MD5 — zero re-processamento desnecessário
+- Interface Streamlit com upload, chat e scores RAGAS em tempo real
+
+`Python` · `LangChain` · `Pinecone` · `OpenAI` · `Tesseract` · `Streamlit` · `RAGAS`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🤖 LinkedIn Profile Analyzer (Claude-powered)
 Aplicação web em React que utiliza a API do Claude para analisar perfis do LinkedIn, pontuar seções e gerar recomendações de melhoria personalizadas em tempo real.
 
@@ -65,8 +81,6 @@ Aplicação web em React que utiliza a API do Claude para analisar perfis do Lin
 `React` · `Claude API` · `Anthropic SDK` · `JavaScript`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 📊 GMV Forecasting — LSTM Neural Network
@@ -81,6 +95,8 @@ Sistema de previsão de GMV (Gross Merchandise Value) com rede neural LSTM conec
 `Python` · `TensorFlow/Keras` · `AWS Athena` · `Pandas` · `LSTM`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🧾 Reconciliação Financeira Automatizada
@@ -95,8 +111,6 @@ Script Python de conciliação cruzando dados do AWS Athena com arquivos Excel l
 `Python` · `SQLAlchemy` · `AWS Athena` · `MySQL` · `Pandas` · `openpyxl`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 📈 Power BI — Voucher Lifecycle Query (Power Query / M)
@@ -111,6 +125,8 @@ Otimização de queries complexas em M Language para rastreamento do ciclo de vi
 `Power Query (M)` · `AWS Athena` · `Power BI` · `Presto/Trino SQL`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### ✈️ OTA Aviation Sales Report
@@ -124,8 +140,6 @@ Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas 
 `Python` · `Pandas` · `openpyxl` · `ETL` · `AWS Athena`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🗄️ SQL Knowledge Base — Travel Data Engineering
@@ -134,19 +148,6 @@ Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos o
 **25 domínios cobertos:** Financeiro, Pagamentos, Conciliação, Vouchers, NFSe, Netsuite, Delta Lake, e mais.
 
 `AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake`
-
-</td>
-<td width="50%" valign="top">
-
-### 📦 WorkFlow Repository — Dev Environment
-Repositório privado estruturado como ambiente de desenvolvimento integrado com VS Code, DBeaver e AWS Athena — centralizando scripts SQL, arquivos de dados e automações.
-
-**O que foi construído:**
-- Configuração de VS Code como cliente de banco de dados
-- Integração com extensão SQL Tools + driver Athena
-- Organização de scripts por domínio de negócio
-
-`VS Code` · `DBeaver` · `AWS Athena` · `Git`
 
 </td>
 </tr>
@@ -236,12 +237,9 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=JosafaSants&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JosafaSants&layout=compact&langs_count=8&theme=tokyonight"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=JosafaSants&theme=tokyonight" alt="streak stats"/>
+  <img src="https://img.shields.io/badge/Linguagem_Principal-Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Contribuições-71+-0e75b6?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-JosafaSants-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </p>
 
 ---
