@@ -129,6 +129,20 @@ Otimização de queries complexas em M Language para rastreamento do ciclo de vi
 <tr>
 <td width="50%" valign="top">
 
+### 📊 E-commerce Strategic Dashboard
+Dashboard executivo construído sobre 96k pedidos reais do marketplace Olist — EDA em Python, modelagem semântica com dbt e visualização em Power BI, seguindo o formato STAR para documentação de resultados de negócio.
+
+**O que foi construído:**
+- EDA documentada em notebooks públicos com identificação de anomalia crítica de dados
+- Camada semântica com dbt + DuckDB: 3 modelos governados, 4/4 testes de qualidade passando
+- Dashboard executivo com 3 páginas orientadas a decisão (receita, geografia, qualidade operacional)
+- Insights: crescimento 20x em 24 meses, ticket médio Norte 50% superior ao de SP
+
+`Python` · `dbt-core` · `DuckDB` · `Power BI` · `pandas` · `seaborn`
+
+</td>
+<td width="50%" valign="top">
+
 ### ✈️ OTA Aviation Sales Report
 Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas (123Milhas + MaxMilhas) em um único relatório Excel estilizado com comparação cruzada de precificação e volume.
 
@@ -140,6 +154,8 @@ Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas 
 `Python` · `Pandas` · `openpyxl` · `ETL` · `AWS Athena`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🗄️ SQL Knowledge Base — Travel Data Engineering
@@ -148,6 +164,19 @@ Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos o
 **25 domínios cobertos:** Financeiro, Pagamentos, Conciliação, Vouchers, NFSe, Netsuite, Delta Lake, e mais.
 
 `AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake`
+
+</td>
+<td width="50%" valign="top">
+
+### 📦 WorkFlow Repository — Dev Environment
+Repositório privado estruturado como ambiente de desenvolvimento integrado com VS Code, DBeaver e AWS Athena — centralizando scripts SQL, arquivos de dados e automações.
+
+**O que foi construído:**
+- Configuração de VS Code como cliente de banco de dados
+- Integração com extensão SQL Tools + driver Athena
+- Organização de scripts por domínio de negócio
+
+`VS Code` · `DBeaver` · `AWS Athena` · `Git`
 
 </td>
 </tr>
@@ -187,50 +216,83 @@ Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos o
 
 ### Linguagens
 <p>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" title="Python"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" title="JavaScript"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" title="C"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="36" height="36" alt="C++" title="C++"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" title="C#"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=amazondynamodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
 </p>
 
 ### Dados & Bancos
 <p>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" title="MySQL"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" title="PostgreSQL"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" title="Oracle"/>
+<img src="https://img.shields.io/badge/AWS_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/Delta_Lake-003366?style=for-the-badge&logo=databricks&logoColor=white"/>
+<img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black"/>
+<img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
 </p>
 
-**SQL avançado em:** `AWS Athena (Presto/Trino)` · `MySQL` · `SQL Server` · `Delta Lake`
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/dbt--core-FF694B?style=for-the-badge&logo=dbt&logoColor=white"/>
+<img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
+<img src="https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 
-**Ferramentas de dados:** `Pandas` · `openpyxl` · `SQLAlchemy` · `python-docx` · `ETL pipelines`
-
-### Frontend & Web
+### Streaming & Observabilidade
 <p>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" title="React"/>
+<img src="https://img.shields.io/badge/Redpanda-E6363A?style=for-the-badge&logo=redpanda&logoColor=white"/>
+<img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"/>
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/>
+<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
-`React` · `Vite` · `REST APIs` · `Claude API (Anthropic SDK)`
+### BI & Visualização
+<p>
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/Power_Query_M-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Seaborn-4C9BE8?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
 
 ### Cloud & Infraestrutura
 <p>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored-dark.svg" width="36" height="36" alt="AWS" title="AWS"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" width="36" height="36" alt="Linux" title="Linux"/>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/MCP_Protocol-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
 
-**AWS:** `Athena` · `S3 (Data Lake)` · `Glue` · `IAM`
+<img src="https://img.shields.io/badge/Amazon_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_Glue-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 
-**Infra:** `VPS` · `ngrok` · `FastAPI` · `MCP Protocol (SSE)`
+### Frontend & Web
+<p>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+</p>
 
 ### IA / ML & LLMs
 <p>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg" width="36" height="36" alt="TensorFlow" title="TensorFlow"/>
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS Code" title="VS Code"/>
+<img src="https://img.shields.io/badge/Claude_API-6B57FF?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/MCP_Servers-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
 
-**Produção:** `Claude API` · `MCP Servers` · `LSTM (TensorFlow/Keras)`
-
-**Aprendizado ativo:** `RAG` · `LangChain` · `LlamaIndex` · `Vector Databases` · `Claude Code`
+<img src="https://img.shields.io/badge/RAG-00BFA5?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/RAGAS-412991?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tesseract_OCR-0077B5?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Vector_Databases-6B57FF?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Claude_Code-6B57FF?style=for-the-badge&logoColor=white"/>
 
 ---
 
