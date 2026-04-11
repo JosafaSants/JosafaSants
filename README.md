@@ -25,8 +25,8 @@
 🇺🇸 Control & Automation Engineer (PUC Minas) working at the intersection of **Data Engineering, Analytics, and Applied AI** — building everything from ETL pipelines to large-scale financial analytics for the travel industry. I work daily with **aviation and OTA (Online Travel Agency)** data, navigating heterogeneous multi-source environments and orchestrating Data Lake layers from raw ingestion to analytics-ready delivery.
 
 ```
-🔭  Current focus  →  MCP Servers · LLM-powered apps · Financial reconciliation at scale
-🧠  Learning       →  RAG (Retrieval-Augmented Generation) and applied LLM architectures
+🔭  Current focus  →  Multi-Agent Systems · LLM Orchestration · Financial reconciliation at scale
+🧠  Building       →  Portfolio spanning Data Engineering, AI Engineering, Data Analysis & Prompt Engineering
 ⚡  Principle      →  Data without context is noise. Context without data is opinion.
 📍  Location       →  Brazil
 ```
@@ -48,9 +48,27 @@ Servidor MCP (Model Context Protocol) em Python rodando em VPS, que expõe dados
 - Integração com Claude.ai via MCP remoto (ngrok/VPS)
 - Autenticação e controle de acesso por ambiente
 
+> ⚠️ MVP em desenvolvimento — módulo de vendas implementado.
+
 `Python` · `FastAPI` · `MCP Protocol` · `AWS Athena` · `MySQL` · `Claude API`
 
 </td>
+<td width="50%" valign="top">
+
+### 🤖 Autonomous Multi-Agent Orchestrator
+Sistema de 3 agentes em pipeline orquestrado por **LangGraph**: o usuário pergunta em português, o Agente SQL gera e executa queries no DuckDB com auto-correção, o Agente Analista identifica padrões e devolve JSON estruturado, e o Agente Comunicador produz um relatório narrativo executivo. Cada decisão é auditável via trilha de debug.
+
+**O que foi construído:**
+- Grafo de estado tipado com `TypedDict` e edge condicional de erro
+- Auto-correção com retry em até 3 tentativas no Agente SQL
+- Output estruturado com Pydantic v2 entre agentes
+- Interface Streamlit com expander de debug (SQL, JSON, log de tentativas)
+
+`Python` · `LangGraph` · `GPT-4o-mini` · `DuckDB` · `Streamlit` · `Pydantic`
+
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🧠 IntelliDoc RAG Multimodal
@@ -65,64 +83,17 @@ Sistema completo de *Retrieval-Augmented Generation* que ingere PDFs e imagens, 
 `Python` · `LangChain` · `Pinecone` · `OpenAI` · `Tesseract` · `Streamlit` · `RAGAS`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-### 🤖 LinkedIn Profile Analyzer (Claude-powered)
-Aplicação web em React que utiliza a API do Claude para analisar perfis do LinkedIn, pontuar seções e gerar recomendações de melhoria personalizadas em tempo real.
+### 🚀 RideStream Analytics Lakehouse
+Pipeline de dados em tempo real inspirado nos desafios de empresas como Uber e 99. Ingere eventos via **Redpanda** (Kafka-compatível), processa com **Spark Structured Streaming** e organiza em Arquitetura Medalhão no **MinIO** (S3-compatível) — stack 100% local e cloud-agnostic.
 
 **O que foi construído:**
-- Interface React com análise por seção (headline, sobre, experiência, skills)
-- Score estruturado com sugestões acionáveis
-- Integração direta com a API Anthropic (claude-sonnet)
-- UX orientada a resultados práticos para profissionais
+- Camadas Bronze/Silver/Gold com Delta Lake, deduplicação e particionamento
+- 6 modelos dbt + 15 testes de qualidade na camada Gold (DuckDB)
+- Observabilidade com Prometheus + Grafana + DataSentinel (GPT-4o-mini)
 
-`React` · `Claude API` · `Anthropic SDK` · `JavaScript`
-
-</td>
-<td width="50%" valign="top">
-
-### 📊 GMV Forecasting — LSTM Neural Network
-Sistema de previsão de GMV (Gross Merchandise Value) com rede neural LSTM conectada ao AWS Athena, com ensemble adaptativo e análise de sazonalidade histórica.
-
-**O que foi construído:**
-- Pipeline de features com EWMA (Exponential Weighted Moving Average)
-- Sazonalidade histórica por perfil de mês/dia da semana
-- Ensemble adaptativo para projeções futuras
-- Geração de relatórios com intervalos de confiança
-
-`Python` · `TensorFlow/Keras` · `AWS Athena` · `Pandas` · `LSTM`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧾 Reconciliação Financeira Automatizada
-Script Python de conciliação cruzando dados do AWS Athena com arquivos Excel locais — matching por NSU e código de autorização para relatórios de pagamentos.
-
-**O que foi construído:**
-- Arquitetura refatorada com dataclasses imutáveis e funções puras
-- Conexão Athena via SQLAlchemy (`awsathena://` dialect)
-- Cross-reference MySQL ↔ Athena em escala
-- Tratamento de certificados SSL corporativos (Zscaler/proxy)
-
-`Python` · `SQLAlchemy` · `AWS Athena` · `MySQL` · `Pandas` · `openpyxl`
-
-</td>
-<td width="50%" valign="top">
-
-### 📈 Power BI — Voucher Lifecycle Query (Power Query / M)
-Otimização de queries complexas em M Language para rastreamento do ciclo de vida de vouchers em quatro tipos de produto, com lógica de incrementalidade e particionamento mensal.
-
-**O que foi construído:**
-- Queries particionadas por mês em arquivos `.m` separados
-- Eventos rastreados: Gerado, Tentativa, Utilizado, Expirado, Cancelado
-- Incremental refresh com filtro por parâmetro de data
-- Padrão de código com task-tags `MDD-000` e sem alinhamentos longos
-
-`Power Query (M)` · `AWS Athena` · `Power BI` · `Presto/Trino SQL`
+`Python` · `Redpanda` · `Spark` · `Delta Lake` · `MinIO` · `dbt` · `Grafana` · `Docker`
 
 </td>
 </tr>
@@ -143,8 +114,68 @@ Dashboard executivo construído sobre 96k pedidos reais do marketplace Olist —
 </td>
 <td width="50%" valign="top">
 
+### 🤖 LinkedIn Profile Analyzer (Claude-powered)
+Aplicação web em React que utiliza a API do Claude para analisar perfis do LinkedIn, pontuar seções e gerar recomendações de melhoria personalizadas em tempo real.
+
+**O que foi construído:**
+- Interface React com análise por seção (headline, sobre, experiência, skills)
+- Score estruturado com sugestões acionáveis
+- Integração direta com a API Anthropic (claude-sonnet)
+- UX orientada a resultados práticos para profissionais
+
+`React` · `Claude API` · `Anthropic SDK` · `JavaScript`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📊 GMV Forecasting — LSTM Neural Network
+Sistema de previsão de GMV (Gross Merchandise Value) com rede neural LSTM conectada ao AWS Athena, com ensemble adaptativo e análise de sazonalidade histórica.
+
+**O que foi construído:**
+- Pipeline de features com EWMA (Exponential Weighted Moving Average)
+- Sazonalidade histórica por perfil de mês/dia da semana
+- Ensemble adaptativo para projeções futuras
+- Geração de relatórios com intervalos de confiança
+
+`Python` · `TensorFlow/Keras` · `AWS Athena` · `Pandas` · `LSTM`
+
+</td>
+<td width="50%" valign="top">
+
+### 🧾 Reconciliação Financeira Automatizada
+Script Python de conciliação cruzando dados do AWS Athena com arquivos Excel locais — matching por NSU e código de autorização para relatórios de pagamentos.
+
+**O que foi construído:**
+- Arquitetura refatorada com dataclasses imutáveis e funções puras
+- Conexão Athena via SQLAlchemy (`awsathena://` dialect)
+- Cross-reference MySQL ↔ Athena em escala
+- Tratamento de certificados SSL corporativos (Zscaler/proxy)
+
+`Python` · `SQLAlchemy` · `AWS Athena` · `MySQL` · `Pandas` · `openpyxl`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📈 Power BI — Voucher Lifecycle Query (Power Query / M)
+Otimização de queries complexas em M Language para rastreamento do ciclo de vida de vouchers em quatro tipos de produto, com lógica de incrementalidade e particionamento mensal.
+
+**O que foi construído:**
+- Queries particionadas por mês em arquivos `.m` separados
+- Eventos rastreados: Gerado, Tentativa, Utilizado, Expirado, Cancelado
+- Incremental refresh com filtro por parâmetro de data
+- Padrão de código com task-tags `MDD-000` e sem alinhamentos longos
+
+`Power Query (M)` · `AWS Athena` · `Power BI` · `Presto/Trino SQL`
+
+</td>
+<td width="50%" valign="top">
+
 ### ✈️ OTA Aviation Sales Report
-Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas (123Milhas + MaxMilhas) em um único relatório Excel estilizado com comparação cruzada de precificação e volume.
+Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas em um único relatório Excel estilizado com comparação cruzada de precificação e volume.
 
 **O que foi construído:**
 - Extração de múltiplas fontes heterogêneas (Athena + MySQL)
@@ -234,11 +265,13 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
 </p>
 
+<p>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/dbt--core-FF694B?style=for-the-badge&logo=dbt&logoColor=white"/>
 <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
 <img src="https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
+</p>
 
 ### Streaming & Observabilidade
 <p>
@@ -267,10 +300,12 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/MCP_Protocol-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
 
+<p>
 <img src="https://img.shields.io/badge/Amazon_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_Glue-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+</p>
 
 ### Frontend & Web
 <p>
@@ -283,16 +318,20 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/Claude_API-6B57FF?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
 <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
 <img src="https://img.shields.io/badge/MCP_Servers-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
 
+<p>
 <img src="https://img.shields.io/badge/RAG-00BFA5?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/RAGAS-412991?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Tesseract_OCR-0077B5?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Vector_Databases-6B57FF?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Claude_Code-6B57FF?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white"/>
+</p>
 
 ---
 
