@@ -25,8 +25,8 @@
 🇺🇸 Control & Automation Engineer (PUC Minas) working at the intersection of **Data Engineering, Analytics, and Applied AI** — building everything from ETL pipelines to large-scale financial analytics for the travel industry. I work daily with **aviation and OTA (Online Travel Agency)** data, navigating heterogeneous multi-source environments and orchestrating Data Lake layers from raw ingestion to analytics-ready delivery.
 
 ```
-🔭  Current focus  →  Multi-Agent Systems · LLM Orchestration · Financial reconciliation at scale
-🧠  Building       →  Portfolio spanning Data Engineering, AI Engineering, Data Analysis & Prompt Engineering
+🔭  Current focus  →  MCP Servers · LLM-powered apps · Financial reconciliation at scale
+🧠  Learning       →  RAG (Retrieval-Augmented Generation) and applied LLM architectures
 ⚡  Principle      →  Data without context is noise. Context without data is opinion.
 📍  Location       →  Brazil
 ```
@@ -40,174 +40,133 @@
 <td width="50%" valign="top">
 
 ### 🔌 Financial Reconciliation MCP Server
-Servidor MCP (Model Context Protocol) em Python rodando em VPS, que expõe dados financeiros reais via linguagem natural para o Claude.ai. Permite que colegas sem conhecimento técnico consultem conciliações, NSUs e relatórios diretamente no chat.
+🇧🇷 Servidor MCP (Model Context Protocol) em Python rodando em VPS, que expõe dados financeiros reais via linguagem natural para o Claude.ai. Permite que colegas sem conhecimento técnico consultem conciliações, NSUs e relatórios diretamente no chat.
 
-**O que foi construído:**
-- Servidor SSE/MCP com FastAPI + Python
-- Ferramentas de consulta a AWS Athena e MySQL em tempo real
-- Integração com Claude.ai via MCP remoto (ngrok/VPS)
-- Autenticação e controle de acesso por ambiente
+🇺🇸 MCP (Model Context Protocol) server in Python running on a VPS, exposing real financial data via natural language through Claude.ai. Enables non-technical colleagues to query reconciliations, NSUs, and reports directly in chat.
 
-> ⚠️ MVP em desenvolvimento — módulo de vendas implementado.
+**O que foi construído / What was built:**
+- 🇧🇷 Servidor SSE/MCP com FastAPI + Python / 🇺🇸 SSE/MCP server with FastAPI + Python
+- 🇧🇷 Ferramentas de consulta a AWS Athena e MySQL em tempo real / 🇺🇸 Real-time query tools for AWS Athena and MySQL
+- 🇧🇷 Integração com Claude.ai via MCP remoto / 🇺🇸 Claude.ai integration via remote MCP
+- 🇧🇷 Autenticação e controle de acesso por ambiente / 🇺🇸 Authentication and environment-based access control
 
 `Python` · `FastAPI` · `MCP Protocol` · `AWS Athena` · `MySQL` · `Claude API`
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 Autonomous Multi-Agent Orchestrator
-Sistema de 3 agentes em pipeline orquestrado por **LangGraph**: o usuário pergunta em português, o Agente SQL gera e executa queries no DuckDB com auto-correção, o Agente Analista identifica padrões e devolve JSON estruturado, e o Agente Comunicador produz um relatório narrativo executivo. Cada decisão é auditável via trilha de debug.
-
-**O que foi construído:**
-- Grafo de estado tipado com `TypedDict` e edge condicional de erro
-- Auto-correção com retry em até 3 tentativas no Agente SQL
-- Output estruturado com Pydantic v2 entre agentes
-- Interface Streamlit com expander de debug (SQL, JSON, log de tentativas)
-
-`Python` · `LangGraph` · `GPT-4o-mini` · `DuckDB` · `Streamlit` · `Pydantic`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 ### 🧠 IntelliDoc RAG Multimodal
-Sistema completo de *Retrieval-Augmented Generation* que ingere PDFs e imagens, transforma em embeddings semânticos e responde perguntas em linguagem natural — com avaliação automática de fidelidade via RAGAS (score médio 0.81).
+🇧🇷 Sistema completo de *Retrieval-Augmented Generation* que ingere PDFs e imagens, transforma em embeddings semânticos e responde perguntas em linguagem natural — com avaliação automática de fidelidade via RAGAS (score médio 0.81).
 
-**O que foi construído:**
-- Pipeline RAG end-to-end com LangChain + Pinecone + GPT-4o-mini
-- OCR de imagens com Tesseract 5.5 integrado ao mesmo pipeline
-- Ingestão incremental por hash MD5 — zero re-processamento desnecessário
-- Interface Streamlit com upload, chat e scores RAGAS em tempo real
+🇺🇸 Full *Retrieval-Augmented Generation* system that ingests PDFs and images, converts them into semantic embeddings, and answers questions in natural language — with automatic faithfulness evaluation via RAGAS (average score 0.81).
+
+**O que foi construído / What was built:**
+- 🇧🇷 Pipeline RAG end-to-end com LangChain + Pinecone + GPT-4o-mini / 🇺🇸 End-to-end RAG pipeline with LangChain + Pinecone + GPT-4o-mini
+- 🇧🇷 OCR de imagens com Tesseract 5.5 integrado ao mesmo pipeline / 🇺🇸 Image OCR with Tesseract 5.5 integrated into the same pipeline
+- 🇧🇷 Ingestão incremental por hash MD5 — zero re-processamento / 🇺🇸 Incremental ingestion via MD5 hash — zero reprocessing
+- 🇧🇷 Interface Streamlit com upload, chat e scores RAGAS em tempo real / 🇺🇸 Streamlit interface with upload, chat, and live RAGAS scores
 
 `Python` · `LangChain` · `Pinecone` · `OpenAI` · `Tesseract` · `Streamlit` · `RAGAS`
 
 </td>
-<td width="50%" valign="top">
-
-### 🚀 RideStream Analytics Lakehouse
-Pipeline de dados em tempo real inspirado nos desafios de empresas como Uber e 99. Ingere eventos via **Redpanda** (Kafka-compatível), processa com **Spark Structured Streaming** e organiza em Arquitetura Medalhão no **MinIO** (S3-compatível) — stack 100% local e cloud-agnostic.
-
-**O que foi construído:**
-- Camadas Bronze/Silver/Gold com Delta Lake, deduplicação e particionamento
-- 6 modelos dbt + 15 testes de qualidade na camada Gold (DuckDB)
-- Observabilidade com Prometheus + Grafana + DataSentinel (GPT-4o-mini)
-
-`Python` · `Redpanda` · `Spark` · `Delta Lake` · `MinIO` · `dbt` · `Grafana` · `Docker`
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📊 E-commerce Strategic Dashboard
-Dashboard executivo construído sobre 96k pedidos reais do marketplace Olist — EDA em Python, modelagem semântica com dbt e visualização em Power BI, seguindo o formato STAR para documentação de resultados de negócio.
+### 🤖 Autonomous Multi-Agent Orchestrator
+🇧🇷 Sistema de 3 agentes em pipeline (LangGraph) que responde perguntas em linguagem natural sobre dados reais do Olist — traduz para SQL, executa, analisa padrões e devolve relatório narrativo executivo. Cada decisão é auditável via trilha de debug.
 
-**O que foi construído:**
-- EDA documentada em notebooks públicos com identificação de anomalia crítica de dados
-- Camada semântica com dbt + DuckDB: 3 modelos governados, 4/4 testes de qualidade passando
-- Dashboard executivo com 3 páginas orientadas a decisão (receita, geografia, qualidade operacional)
-- Insights: crescimento 20x em 24 meses, ticket médio Norte 50% superior ao de SP
+🇺🇸 3-agent pipeline (LangGraph) that answers natural language questions about real Olist data — translates to SQL, executes, analyzes patterns, and returns an executive narrative report. Every decision is auditable via a debug trail.
+
+**O que foi construído / What was built:**
+- 🇧🇷 3 agentes especializados com estado tipado via TypedDict / 🇺🇸 3 specialized agents with typed state via TypedDict
+- 🇧🇷 Agente SQL com auto-correção em até 3 tentativas / 🇺🇸 SQL Agent with auto-correction up to 3 retries
+- 🇧🇷 Edge condicional no grafo LangGraph para tratamento de erros / 🇺🇸 Conditional edge in LangGraph for error handling
+- 🇧🇷 Trilha de debug completa: SQL, JSON de insights e log de tentativas / 🇺🇸 Full debug trail: SQL, insights JSON, and retry log
+
+`Python` · `LangGraph` · `GPT-4o-mini` · `DuckDB` · `Streamlit` · `Pydantic`
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 E-commerce Strategic Dashboard
+🇧🇷 Dashboard executivo construído sobre 96k pedidos reais do Olist — EDA em Python, modelagem semântica com dbt e visualização em Power BI. Crescimento de 20x em 24 meses documentado com insights estratégicos por região.
+
+🇺🇸 Executive dashboard built on 96k real Olist orders — Python EDA, semantic modeling with dbt, and Power BI visualization. 20x growth in 24 months documented with strategic regional insights.
+
+**O que foi construído / What was built:**
+- 🇧🇷 EDA documentada em notebooks públicos com identificação de anomalia crítica / 🇺🇸 EDA documented in public notebooks with critical anomaly detection
+- 🇧🇷 Camada semântica dbt + DuckDB: 3 modelos, 4/4 testes passando / 🇺🇸 dbt + DuckDB semantic layer: 3 models, 4/4 tests passing
+- 🇧🇷 Dashboard com 3 páginas orientadas a decisão / 🇺🇸 3-page decision-oriented dashboard
+- 🇧🇷 Ticket médio Norte 50% superior ao de SP — oportunidade identificada / 🇺🇸 Northern states ticket 50% above SP average — opportunity identified
 
 `Python` · `dbt-core` · `DuckDB` · `Power BI` · `pandas` · `seaborn`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
-### 🤖 LinkedIn Profile Analyzer (Claude-powered)
-Aplicação web em React que utiliza a API do Claude para analisar perfis do LinkedIn, pontuar seções e gerar recomendações de melhoria personalizadas em tempo real.
+### 🚀 RideStream Analytics Lakehouse
+🇧🇷 Pipeline de streaming em tempo real inspirado nos desafios de empresas como Uber e 99 — eventos de corridas ingeridos via Redpanda, processados com Spark Structured Streaming e organizados em arquitetura Medalhão (Bronze → Silver → Gold).
 
-**O que foi construído:**
-- Interface React com análise por seção (headline, sobre, experiência, skills)
-- Score estruturado com sugestões acionáveis
-- Integração direta com a API Anthropic (claude-sonnet)
-- UX orientada a resultados práticos para profissionais
+🇺🇸 Real-time streaming pipeline inspired by challenges at companies like Uber and 99 — ride events ingested via Redpanda, processed with Spark Structured Streaming, and organized in a Medallion architecture (Bronze → Silver → Gold).
 
-`React` · `Claude API` · `Anthropic SDK` · `JavaScript`
+**O que foi construído / What was built:**
+- 🇧🇷 Stack cloud-agnostic local: Redpanda + MinIO + Prometheus + Grafana / 🇺🇸 Local cloud-agnostic stack: Redpanda + MinIO + Prometheus + Grafana
+- 🇧🇷 Camada Gold com dbt-duckdb: 6 modelos SQL, 15 testes de qualidade / 🇺🇸 Gold layer with dbt-duckdb: 6 SQL models, 15 quality tests
+- 🇧🇷 DataSentinel: catálogo inteligente com geração de docs via GPT-4o-mini / 🇺🇸 DataSentinel: intelligent catalog with auto-docs via GPT-4o-mini
+- 🇧🇷 Pipeline validado end-to-end: Producer → Redpanda → Spark → MinIO / 🇺🇸 End-to-end validated pipeline: Producer → Redpanda → Spark → MinIO
+
+`Python` · `Redpanda` · `Apache Spark` · `Delta Lake` · `MinIO` · `dbt` · `Docker` · `Grafana`
+
+</td>
+<td width="50%" valign="top">
+
+### 🗂️ Obsidian Knowledge Base Updater
+🇧🇷 Sistema CLI para manter um vault Obsidian atualizado com documentações técnicas oficiais — busca, classifica e reorganiza arquivos `.md` usando IA local (Ollama) em 6 domínios técnicos. Ferramenta de produtividade para engenheiros de dados.
+
+🇺🇸 CLI system to keep an Obsidian vault up to date with official technical documentation — fetches, classifies, and reorganizes `.md` files using local AI (Ollama) across 6 technical domains. Productivity tool built for data engineers.
+
+**O que foi construído / What was built:**
+- 🇧🇷 4 comandos CLI: `fetch`, `reorganize`, `status`, `update` / 🇺🇸 4 CLI commands: `fetch`, `reorganize`, `status`, `update`
+- 🇧🇷 Classificação de arquivos com Ollama (qwen2.5-coder) com threshold configurável / 🇺🇸 File classification with Ollama (qwen2.5-coder) with configurable threshold
+- 🇧🇷 Dry-run por padrão — nenhum arquivo movido sem confirmação / 🇺🇸 Dry-run by default — no files moved without confirmation
+- 🇧🇷 Domínios cobertos: SQL/Athena, DAX/Power BI, Python, Claude Code/MCP, Security / 🇺🇸 Domains covered: SQL/Athena, DAX/Power BI, Python, Claude Code/MCP, Security
+
+`Python` · `Ollama` · `Obsidian` · `CLI` · `Markdown`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📊 GMV Forecasting — LSTM Neural Network
-Sistema de previsão de GMV (Gross Merchandise Value) com rede neural LSTM conectada ao AWS Athena, com ensemble adaptativo e análise de sazonalidade histórica.
+### 🧾 Reconciliação Financeira Automatizada / Automated Financial Reconciliation
+🇧🇷 Script Python de conciliação cruzando dados do AWS Athena com arquivos Excel — matching por NSU e código de autorização para relatórios de pagamentos em escala.
 
-**O que foi construído:**
-- Pipeline de features com EWMA (Exponential Weighted Moving Average)
-- Sazonalidade histórica por perfil de mês/dia da semana
-- Ensemble adaptativo para projeções futuras
-- Geração de relatórios com intervalos de confiança
+🇺🇸 Python reconciliation script crossing AWS Athena data with Excel files — NSU and authorization code matching for large-scale payment reports.
 
-`Python` · `TensorFlow/Keras` · `AWS Athena` · `Pandas` · `LSTM`
-
-</td>
-<td width="50%" valign="top">
-
-### 🧾 Reconciliação Financeira Automatizada
-Script Python de conciliação cruzando dados do AWS Athena com arquivos Excel locais — matching por NSU e código de autorização para relatórios de pagamentos.
-
-**O que foi construído:**
-- Arquitetura refatorada com dataclasses imutáveis e funções puras
-- Conexão Athena via SQLAlchemy (`awsathena://` dialect)
-- Cross-reference MySQL ↔ Athena em escala
-- Tratamento de certificados SSL corporativos (Zscaler/proxy)
+**O que foi construído / What was built:**
+- 🇧🇷 Arquitetura com dataclasses imutáveis e funções puras / 🇺🇸 Architecture with immutable dataclasses and pure functions
+- 🇧🇷 Conexão Athena via SQLAlchemy (`awsathena://` dialect) / 🇺🇸 Athena connection via SQLAlchemy (`awsathena://` dialect)
+- 🇧🇷 Cross-reference MySQL ↔ Athena em escala / 🇺🇸 MySQL ↔ Athena cross-reference at scale
 
 `Python` · `SQLAlchemy` · `AWS Athena` · `MySQL` · `Pandas` · `openpyxl`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-### 📈 Power BI — Voucher Lifecycle Query (Power Query / M)
-Otimização de queries complexas em M Language para rastreamento do ciclo de vida de vouchers em quatro tipos de produto, com lógica de incrementalidade e particionamento mensal.
+### 📊 GMV Forecasting — LSTM Neural Network
+🇧🇷 Sistema de previsão de GMV com rede neural LSTM conectada ao AWS Athena, com ensemble adaptativo e análise de sazonalidade histórica.
 
-**O que foi construído:**
-- Queries particionadas por mês em arquivos `.m` separados
-- Eventos rastreados: Gerado, Tentativa, Utilizado, Expirado, Cancelado
-- Incremental refresh com filtro por parâmetro de data
-- Padrão de código com task-tags `MDD-000` e sem alinhamentos longos
+🇺🇸 GMV forecasting system with an LSTM neural network connected to AWS Athena, featuring adaptive ensemble and historical seasonality analysis.
 
-`Power Query (M)` · `AWS Athena` · `Power BI` · `Presto/Trino SQL`
+**O que foi construído / What was built:**
+- 🇧🇷 Pipeline de features com EWMA e sazonalidade por perfil de mês/dia / 🇺🇸 Feature pipeline with EWMA and month/weekday seasonality profiles
+- 🇧🇷 Ensemble adaptativo para projeções futuras / 🇺🇸 Adaptive ensemble for future projections
+- 🇧🇷 Relatórios com intervalos de confiança / 🇺🇸 Reports with confidence intervals
 
-</td>
-<td width="50%" valign="top">
-
-### ✈️ OTA Aviation Sales Report
-Pipeline de consolidação de dados de vendas de voos de múltiplas plataformas em um único relatório Excel estilizado com comparação cruzada de precificação e volume.
-
-**O que foi construído:**
-- Extração de múltiplas fontes heterogêneas (Athena + MySQL)
-- Normalização e cruzamento de schemas distintos
-- Relatório Excel com formatação condicional e visual profissional
-
-`Python` · `Pandas` · `openpyxl` · `ETL` · `AWS Athena`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗄️ SQL Knowledge Base — Travel Data Engineering
-Base de conhecimento técnico estruturada com **+1.900 linhas** cobrindo todos os sistemas de dados do ecossistema de travel OTA: queries prontas, dicionários de status, mapeamentos de schemas, padrões de performance e arquitetura Medallion.
-
-**25 domínios cobertos:** Financeiro, Pagamentos, Conciliação, Vouchers, NFSe, Netsuite, Delta Lake, e mais.
-
-`AWS Athena` · `MySQL` · `SQL Server` · `Delta Lake`
-
-</td>
-<td width="50%" valign="top">
-
-### 📦 WorkFlow Repository — Dev Environment
-Repositório privado estruturado como ambiente de desenvolvimento integrado com VS Code, DBeaver e AWS Athena — centralizando scripts SQL, arquivos de dados e automações.
-
-**O que foi construído:**
-- Configuração de VS Code como cliente de banco de dados
-- Integração com extensão SQL Tools + driver Athena
-- Organização de scripts por domínio de negócio
-
-`VS Code` · `DBeaver` · `AWS Athena` · `Git`
+`Python` · `TensorFlow/Keras` · `AWS Athena` · `Pandas` · `LSTM`
 
 </td>
 </tr>
@@ -243,9 +202,9 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 
 ---
 
-## 🛠️ Stack Técnica
+## 🛠️ Stack Técnica / Tech Stack
 
-### Linguagens
+### Linguagens / Languages
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
@@ -255,7 +214,7 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
 </p>
 
-### Dados & Bancos
+### Dados & Bancos / Data & Databases
 <p>
 <img src="https://img.shields.io/badge/AWS_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
@@ -264,7 +223,6 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black"/>
 <img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
 </p>
-
 <p>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"/>
@@ -273,7 +231,7 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/openpyxl-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/>
 </p>
 
-### Streaming & Observabilidade
+### Streaming & Observabilidade / Streaming & Observability
 <p>
 <img src="https://img.shields.io/badge/Redpanda-E6363A?style=for-the-badge&logo=redpanda&logoColor=white"/>
 <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"/>
@@ -283,7 +241,7 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
-### BI & Visualização
+### BI & Visualização / BI & Visualization
 <p>
 <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/Power_Query_M-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
@@ -292,19 +250,15 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/Seaborn-4C9BE8?style=for-the-badge&logo=python&logoColor=white"/>
 </p>
 
-### Cloud & Infraestrutura
+### Cloud & Infraestrutura / Cloud & Infrastructure
 <p>
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-<img src="https://img.shields.io/badge/MCP_Protocol-6B57FF?style=for-the-badge&logoColor=white"/>
-</p>
-
-<p>
 <img src="https://img.shields.io/badge/Amazon_Athena-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 <img src="https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_Glue-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
-<img src="https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/MCP_Protocol-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
 
 ### Frontend & Web
@@ -320,9 +274,9 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/MCP_Servers-6B57FF?style=for-the-badge&logoColor=white"/>
 </p>
-
 <p>
 <img src="https://img.shields.io/badge/RAG-00BFA5?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Pinecone-00BFA5?style=for-the-badge&logoColor=white"/>
@@ -330,7 +284,6 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 <img src="https://img.shields.io/badge/Tesseract_OCR-0077B5?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Vector_Databases-6B57FF?style=for-the-badge&logoColor=white"/>
 <img src="https://img.shields.io/badge/Claude_Code-6B57FF?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white"/>
 </p>
 
 ---
@@ -345,7 +298,7 @@ Repositório privado estruturado como ambiente de desenvolvimento integrado com 
 
 ---
 
-## 🌐 Redes
+## 🌐 Redes / Connect
 
 <p align="left">
 <a href="https://www.github.com/JosafaSants" target="_blank" rel="noreferrer">
